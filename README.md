@@ -14,7 +14,6 @@ A comprehensive healthcare application featuring AI-powered symptom checking and
 ### 📋 Electronic Health Records (EHR)
 - **Complete History**: All symptom analyses are automatically saved to your medical records
 - **Advanced Search**: Search through your medical history using MongoDB Atlas Search
-- **Redis Caching**: Fast data retrieval with Upstash Redis caching
 - **User Identification**: Secure UUID-based session management without requiring login
 
 ### 🎨 Modern UI/UX
@@ -29,61 +28,16 @@ A comprehensive healthcare application featuring AI-powered symptom checking and
 - **Nuxt 3**: Vue.js framework with server-side rendering
 - **Vue 3**: Progressive JavaScript framework
 - **Tailwind CSS**: Utility-first CSS framework
-- **Heroicons**: Beautiful SVG icons
 
 ### Backend & APIs
 - **GraphQL**: Query language with Apollo Server integration
 - **MongoDB**: NoSQL database for storing EHR records
 - **MongoDB Atlas Search**: Full-text search capabilities
-- **Redis (Upstash)**: In-memory caching for performance
 - **Google Gemini AI**: Advanced AI model for symptom analysis
 
 ### Services Integration
 - **MongoDB Atlas**: Cloud-hosted MongoDB with advanced search
-- **Upstash Redis**: Serverless Redis for caching
 - **Google AI Studio**: Gemini AI API for medical analysis
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js 18+ installed
-- MongoDB Atlas account
-- Upstash Redis account
-- Google AI Studio account
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/syncertica-vitalis-lite.git
-   cd syncertica-vitalis-lite
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Set up environment variables**
-   Create a `.env` file in the project root:
-   ```bash
-   UPSTASH_REDIS_REST_URL="your_upstash_redis_url"
-   UPSTASH_REDIS_REST_TOKEN="your_upstash_redis_token"
-   MONGO_URI="your_mongodb_connection_string"
-   GEMINI_API_KEY="your_gemini_api_key"
-   ```
-
-4. **Set up MongoDB Atlas Search**
-   - Create a search index named "default" on your EHR collection
-   - Configure it to search the `symptoms` and `result.diagnosis` fields
-
-5. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-
-6. **Open your browser**
-   Navigate to `http://localhost:3000`
 
 ## 📱 How to Use
 
@@ -115,28 +69,6 @@ A comprehensive healthcare application featuring AI-powered symptom checking and
 
 **IMPORTANT**: This application is for informational purposes only and should not replace professional medical advice. Always consult with qualified healthcare professionals for proper diagnosis and treatment. In case of medical emergencies, contact your local emergency services immediately.
 
-## 🛠️ Development
-
-### Project Structure
-```
-├── app/
-│   ├── pages/           # Vue pages
-│   └── app.vue         # Main app component
-├── assets/
-│   └── css/            # Stylesheets
-├── composables/        # Vue composables
-├── server/
-│   └── api/            # GraphQL API endpoints
-├── .env                # Environment variables
-└── nuxt.config.ts      # Nuxt configuration
-```
-
-### Available Scripts
-- `npm run dev`: Start development server
-- `npm run build`: Build for production
-- `npm run preview`: Preview production build
-- `npm run lint`: Run ESLint
-
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -147,14 +79,12 @@ A comprehensive healthcare application featuring AI-powered symptom checking and
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Syncertica Source Available License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
 - Google Gemini AI for medical analysis capabilities
 - MongoDB Atlas for robust database and search functionality
-- Upstash for high-performance Redis caching
-- Heroicons for beautiful SVG icons
 - Tailwind CSS for modern styling utilities
 
 ---
